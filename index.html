@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog with Rodney</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blog with Rodney</h1>
+    </header>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="blog-post">
+            <h2>Welcome to My Blog</h2>
+            <p>Posted on September 22, 2025 - Hello everyone! This is the first post on "Blog with Rodney". I'm excited to share my thoughts and experiences with you. Stay tuned for more updates!</p>
+        </div>
+        <div class="blog-post">
+            <h2>My First Experience</h2>
+            <p>Posted on September 22, 2025 - Today, I started working on this blog site. It's been a fun journey learning HTML, CSS, and a bit of JavaScript to bring this vision to life.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Blog with Rodney. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple script to add interactivity (e.g., alert on navigation click)
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // e.preventDefault();
+                alert(`Navigating to ${link.textContent.toLowerCase()} section!`);
+            });
+        });
+    </script>
+</body>
+</html>
